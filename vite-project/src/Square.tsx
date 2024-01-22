@@ -5,9 +5,6 @@ type Props = {
 }
 
 function Square({index, onClick, player} : Props) {
-    const scale = player ? "scale-100" : "scale-0"
-    const textColor = player === "X" ? "text-yellow-200" : "text-fushsia-300"
-    const hoverStyle = "transition duration-500 hover:scale-105 transform"
     return(
         <div 
         data-cell-index = {index}
